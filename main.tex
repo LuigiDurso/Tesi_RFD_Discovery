@@ -1,0 +1,15 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{frontespizio}
+\usepackage[italian]{babel}
+
+
+\begin{document}
+    \input{Capitoli/Front}
+    \pagenumbering{gobble}
+    \tableofcontents{}
+    \pagenumbering{arabic}
+    \chapter{Introduzione}
+    \input{Capitoli/Capitolo1}
+\end{document}
