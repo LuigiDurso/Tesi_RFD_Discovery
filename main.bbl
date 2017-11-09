@@ -1,7 +1,11 @@
 \begin{thebibliography}{1}
 
-\bibitem{DUMMY:1}
-J.~Doe, {\em The Book without Title}.
-\newblock Dummy Publisher, 2100.
+\bibitem{tesinaIA}
+T.~M. Altamura~A., Di Pasquale~D., ``Relaxed functional dependencies
+  discovery,'' {\em Unisa}, 2017.
+
+\bibitem{onDiscovery}
+P.~G. Caruccio~L., Deufemia~V., ``On discovery of relaxed functional
+  dependencies,'' {\em boh}, 2018.
 
 \end{thebibliography}

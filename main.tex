@@ -11,7 +11,12 @@
 \usepackage{setspace}
 \doublespacing
 
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{}{0pt}{\Huge}
+\titlespacing*{\chapter} {0pt}{20pt}{40pt}
 
+\usepackage{calligra}
 
 \begin{document}
   
@@ -20,6 +25,8 @@
   \end{titlepage}
    
    \pagenumbering{Roman}
+    
+    \include{Capitoli/DedicaIniziale}
     
     \chapter*{Abstract}
     \input{Capitoli/Abstract.tex}
@@ -31,4 +38,5 @@
     
     \bibliography{BIB/main} 
     \bibliographystyle{ieeetr}
+    
 \end{document}
