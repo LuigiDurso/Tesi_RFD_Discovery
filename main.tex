@@ -1,35 +1,20 @@
 \documentclass[12pt,onesidet]{report}
 
-\usepackage[a4paper,top=25mm,bottom=25mm,bindingoffset=6mm,hmargin={3.5cm,3cm}]{geometry}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[italian]{babel}
-
-\usepackage{graphicx}
-
-
-\usepackage{setspace}
-\doublespacing
-
-\usepackage{titlesec}
-\titleformat{\chapter}[display]
-{\normalfont\huge\bfseries}{}{0pt}{\Huge}
-\titlespacing*{\chapter} {0pt}{20pt}{40pt}
-
-\usepackage{calligra}
+\usepackage{import}
+\import{./}{Preambolo.tex}
 
 \begin{document}
-  
-  \begin{titlepage}
-  	\input{Capitoli/Front.tex}
-  \end{titlepage}
-    
-    \include{Capitoli/DedicaIniziale}
+	
+	\begin{titlepage}
+		\import{Capitoli/}{Front.tex}
+	\end{titlepage}
+
+	\import{Capitoli/}{DedicaIniziale.tex}
     
     \pagenumbering{Roman}
     
     \chapter*{Abstract}
-    \input{Capitoli/Abstract.tex}
+    \import{Capitoli/}{Abstract.tex}
     
     \tableofcontents{}
     \newpage
