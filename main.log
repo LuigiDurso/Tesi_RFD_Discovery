@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.18)  15 NOV 2017 12:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.18)  15 NOV 2017 14:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -592,6 +592,9 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
+\c@theorem=\count119
+\c@lemma=\count120
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box31
@@ -637,11 +640,11 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count119
+\FV@CodeLineNo=\count121
 \FV@InFile=\read1
 \FV@TabBox=\box32
-\c@FancyVerbLine=\count120
-\FV@StepNumber=\count121
+\c@FancyVerbLine=\count122
+\FV@StepNumber=\count123
 \FV@OutFile=\write3
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/upquote/upquote.sty
@@ -806,28 +809,28 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count122
+\linenopenalty=\count124
 \output=\toks28
-\linenoprevgraf=\count123
+\linenoprevgraf=\count125
 \linenumbersep=\dimen148
 \linenumberwidth=\dimen149
-\c@linenumber=\count124
-\c@pagewiselinenumber=\count125
-\c@LN@truepage=\count126
-\c@internallinenumber=\count127
-\c@internallinenumbers=\count128
+\c@linenumber=\count126
+\c@pagewiselinenumber=\count127
+\c@LN@truepage=\count128
+\c@internallinenumber=\count129
+\c@internallinenumbers=\count130
 \quotelinenumbersep=\dimen150
 \bframerule=\dimen151
 \bframesep=\dimen152
 \bframebox=\box33
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count129
-\c@FV@TrueTabCounter=\count130
+\c@FV@TrueTabGroupLevel=\count131
+\c@FV@TrueTabCounter=\count132
 \FV@TabBox@Group=\box34
 \FV@TmpLength=\skip53
-\c@FV@HighlightLinesStart=\count131
-\c@FV@HighlightLinesStop=\count132
+\c@FV@HighlightLinesStart=\count133
+\c@FV@HighlightLinesStop=\count134
 \FV@BreakIndent=\dimen153
 \FV@BreakSymbolSepLeft=\dimen154
 \FV@BreakSymbolSepRight=\dimen155
@@ -839,7 +842,7 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 562.
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 \FV@BreakSymbolIndentRight=\dimen157
-\c@FancyVerbLineBreakLast=\count133
+\c@FancyVerbLineBreakLast=\count135
 \FV@LineBox=\box35
 \FV@LineIndentBox=\box36
 )
@@ -871,8 +874,8 @@ runsystem(rm -- "main.w18")...executed.
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
-\integerpart=\count134
-\decimalpart=\count135
+\integerpart=\count136
+\decimalpart=\count137
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
@@ -887,10 +890,10 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \minted@appexistsfile=\read2
 \minted@bgbox=\box37
 \minted@code=\write5
-\c@minted@FancyVerbLineTemp=\count136
-\c@minted@pygmentizecounter=\count137
+\c@minted@FancyVerbLineTemp=\count138
+\c@minted@pygmentizecounter=\count139
 \@float@every@listing=\toks29
-\c@listing=\count138
+\c@listing=\count140
 )
 runsystem(mkdir -p _minted-main)...executed.
 
@@ -985,16 +988,16 @@ LaTeX Info: Redefining \it@ocap on input line 6.
 LaTeX Info: Redefining \it@ccap on input line 6.
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count139
+\scratchcounter=\count141
 \scratchdimen=\dimen162
 \scratchbox=\box38
-\nofMPsegments=\count140
-\nofMParguments=\count141
+\nofMPsegments=\count142
+\nofMParguments=\count143
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count142
+\MPscratchCnt=\count144
 \MPscratchDim=\dimen163
-\MPnumerator=\count143
-\makeMPintoPDFobject=\count144
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
 \everyMPtoPDFconversion=\toks31
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1090,39 +1093,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--43
 
  []
 
-[4]) (./Capitoli/Introduzione/Sezioni/StudiPreliminari.tex)) [5]
-Capitolo 2.
-(./Capitoli/StatoDellArte/StatoDellArte.tex) (./main.bbl [6
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 56--62
 
-]) [7
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--97
+
+ []
+
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 98--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--107
+
+ []
+
+[8] [9]) (./Capitoli/Introduzione/Sezioni/StudiPreliminari.tex)) [10]
+Capitolo 2.
+(./Capitoli/StatoDellArte/StatoDellArte.tex) (./main.bbl [11
+
+]) [12
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 9771 strings out of 492995
- 156194 string characters out of 6132703
- 291804 words of memory out of 5000000
- 13081 multiletter control sequences out of 15000+600000
- 15456 words of font info for 42 fonts, out of 8000000 for 9000
+ 9819 strings out of 492995
+ 156722 string characters out of 6132703
+ 294903 words of memory out of 5000000
+ 13120 multiletter control sequences out of 15000+600000
+ 20755 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,8n,53p,796b,281s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,13n,53p,792b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm
--super-t1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (15 pages, 296363 bytes).
+-super-ts1.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-
+super-t1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (20 pages, 399160 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 161 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
