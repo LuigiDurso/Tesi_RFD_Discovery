@@ -1,0 +1,35 @@
+\section{Nozioni Preliminari}
+E' necessario, prima di cominciare con lo studio del nostro algoritmo, introdurre alcuni concetti preliminari volti alla comprensione della logica dietro le RFD.
+
+\subsection{Schema di relazione}
+Uno schema di relazione è costituito da un simbolo $R$, detto nome della relazione, e da un insieme di attributi $X = \{A_1,A_2,...,A_n\}$, di solito indicato
+con $R(X)$. A ciascun attributo $A \in X$ e associato un dominio $dom(A)$.
+Uno schema di base di dati è un insieme di schemi di relazione con nomi
+diversi:
+\\ \\
+\centerline{$R = \{ R_1(X_1),R_2(X_2),\ldots,R_n(X_n)\}$.}
+\\ \\
+Una relazione su uno schema $R(X)$ è un insieme $r$ di tuple su $X$. Per
+ogni istanza $r \in R(X)$, per ogni tupla $t \in r$ e per ogni attributo $A \in X$,
+$t[A]$ rappresenta la proiezione di $A$ su $t$. In modo analogo, dato un insieme
+di attributi $Y \subseteq X$, $t[Y]$ rappresenta la proiezione di $Y$ su $t$.\cite{libroCeri}
+\\
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ | l | l | l | l |}
+        \hline
+        Matricola & Cognome & Nome & Data di nascita\\
+        \hline
+        123456 & Rossi & Mario & 25/11/1991 \\ 
+        567891 & Neri & Anna & 23/04/1992 \\ 
+        \hline
+    \end{tabular}
+    \caption{Esempio di schema di relazione}
+    \label{tab:table example}
+\end{table}
+
+\subsection{Dipendenze funzionali canoniche}
+\subsection{Dipendenze funzionali rilassate}
+\subsection{Teoria delle decisioni}
+\subsection{Dominanza}
