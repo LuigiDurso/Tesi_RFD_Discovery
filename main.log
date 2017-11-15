@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.18)  15 NOV 2017 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.18)  15 NOV 2017 15:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1123,24 +1123,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--107
 
  []
 
-[8] [9]) (./Capitoli/Introduzione/Sezioni/StudiPreliminari.tex)) [10]
+[8] [9]) (./Capitoli/Introduzione/Sezioni/StudiPreliminari.tex [10])) [11]
 Capitolo 2.
-(./Capitoli/StatoDellArte/StatoDellArte.tex) (./main.bbl [11
+(./Capitoli/StatoDellArte/StatoDellArte.tex) (./main.bbl [12
 
-]) [12
+]) [13
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 9819 strings out of 492995
- 156722 string characters out of 6132703
- 294903 words of memory out of 5000000
- 13120 multiletter control sequences out of 15000+600000
- 20755 words of font info for 57 fonts, out of 8000000 for 9000
+ 9824 strings out of 492995
+ 156777 string characters out of 6132703
+ 294907 words of memory out of 5000000
+ 13123 multiletter control sequences out of 15000+600000
+ 21791 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,13n,53p,792b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm
--super-ts1.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-
-super-t1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+-super-t1.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-s
+uper-ts1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
@@ -1150,21 +1150,22 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (20 pages, 399160 bytes).
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (21 pages, 432961 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
+ 170 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
