@@ -1,8 +1,8 @@
 \section{Struttura del progetto}
 Tutto il progetto è strutturato in 4 \emph{package(Dataset,RFD,Actors,Utility)}.
 Nel corso della descrizione del codice, assumeremo che il lettore possieda già basi del linguaggio di programmazione \emph{Java}. Per cui, sarà omessa la differenziazione tra metodi pubblici, metodi privati e metodi statici delle singole classi.
-Sia la \textbf{matrice delle distanze}, sia il \textbf{dataset} sono implementati utilizzando due diversi data frame (classe \texttt{DataFrame} della libreria DataFrame di Joinery citata nella sezione precedente). Per gli \textbf{insiemi C}, invece, è stato utilizzato una lista (classe \texttt{ObjectArrayList} della libreria FastUtil) avente come elementi i vettori contenenti le distanze e come chiave le coppie di identificativi delle due tuple da cui tale vettore è stato ricavato.
-Le \textbf{RFDs} sono state inserite in una classe di utility chiamata RFDMap.
+Sia la \textbf{matrice delle distanze}, sia il \textbf{dataset} sono implementati utilizzando due diversi data frame (classe \texttt{DataFrame} della libreria DataFrame di Joinery citata nella sezione precedente). Per gli \textbf{insiemi C}, invece, è stata utilizzata una lista (classe \texttt{ObjectArrayList} della libreria FastUtil) avente come elementi i vettori contenenti le distanze e  le coppie di identificativi delle due tuple da cui tale vettore è stato ricavato.
+Le \textbf{RFDs} sono state inserite in una classe di utility chiamata \textbf{RFDMap}.
 \begin{figure}[H]
 	\centering
 	\includegraphics{Immagini/StrutturaProgetto.png}
@@ -62,7 +62,7 @@ Per calcolare la differenza fra i valori di un attributo, occorre prima di tutto
 A differenza del dataset originale, la matrice delle distanze avrà un campo in più inserito alla fine che rappresenterà la coppia dei pattern da cui è nata quella riga.
 Tale processo di creazione farà in modo di inserire una sola riga tra una coppia di tipo (1,2) e (2,1).
 Infine, effettuiamo un taglio delle righe duplicate.
-Tutto questo viene effettuato dal metodo \textbf{CreateDistanceMatrix}.
+Tutto questo viene effettuato dal metodo \textbf{concurrentCreateMatrix}.
 \begin{listing}[H]
 	\inputminted[]{java}{Codici/CreateDistanceMatrix.java}
 	\caption{Metodo CreateDistanceMatrix}
@@ -102,7 +102,7 @@ Gli argomenti da passare al metodo sono i seguenti:
 \end{itemize}
 Questo metodo richiamerà, come visto nel capitolo precedente la dominanza tra due righe.
 La dominanza è definita attraverso un altro metodo implementato in questa classe.
-Il metodo è chiamato \textbf{dominance}
+Il metodo è chiamato \textbf{dominance} e restituisce true se la prima tupla passata come parametro \emph{domina} la seconda.
 \begin{listing}[H]
 	\inputminted[]{java}{Codici/Dominance.java}
 	\caption{Metodo Dominance}
@@ -117,7 +117,7 @@ Gli argomenti da passare al metodo sono i seguenti:
 \end{itemize}
 \textbf{MinimalityAndGenerationRFD.java}:
 Questa classe contiene il metodo per l'inizio delle ultime due fasi finali.
-Durante l'esecuzione si cercano i minimi attraverso la fase di \emph{Minimality} e, successivamente, vengono trovate le \textbf{RFD}.
+Durante l'esecuzione si cercano i minimi attraverso la fase di \emph{Minimality} e, successivamente, vengono trovate le \emph{RFD} durante la fase di \emph{RFD Generation}(Queste ultime due fasi non sono parte dello studio di questo lavoro di tesi).
 Il Metodo che si occupa di dare inizio a questi ultimi due step è \textbf{startMinimalityAndGeneration}.
 \begin{listing}[H]
 	\inputminted[]{java}{Codici/MinimalityAndGenerationRFD.java}
@@ -132,7 +132,7 @@ Gli argomenti da passare al metodo sono i seguenti:
 	\item \textbf{dM} : matrice delle distanze.
 \end{itemize}
 \textbf{MainClass.java}:
-Classe che da il via al nostro algoritmo, si occupa di creare il container per i nostri attori(\emph{ActorSystem}) e di mandare un messaggio che avvii le varie fasi dell'algoritmo.
+Classe che da il via al nostro algoritmo, si occupa di creare il container per i nostri attori(\emph{ActorSystem}) e di mandare un messaggio all'\emph{Actor principale} per l'avvio delle varie fasi dell'algoritmo.
 Di seguito vediamo uno snippet che mostra quanto appena descritto.
 \begin{listing}[H]
 	\inputminted[]{java}{Codici/MainClass.java}
@@ -140,7 +140,7 @@ Di seguito vediamo uno snippet che mostra quanto appena descritto.
 	\label{Code:7}
 \end{listing}
 \textbf{OrderedDM.java}:
-Classe di utility per mantenere in memoria informazioni sulla matrice delle distanze per i vari RHS.
+Classe di utility per mantenere in memoria informazioni sulla matrice delle distanze per i vari RHS.\\
 Le variabili di istanza di tale classe sono le seguenti:
 \begin{itemize}
 	\item \textbf{allC} : insiemi C trovati nella fase precedente di Feasibility;
@@ -162,17 +162,43 @@ Le classi per questo pacchetto sono:\\
 Classe principale che coordina il numero di attori che devono essere istanziati.
 Questa classe da il via ad ogni singola fase dell'algoritmo richiamando i metodi principali situati nelle classi del pacchetto precedentemente visto(RFD).
 Per ogni inizio di fase istanzia un numero di attori(thread) deciso come parametro da parte dell'utente(default:2).\\
+Di seguito è riportato un esempio di lancio di messaggio da parte del \emph{MainActor}, in particolare, in questo esempio viene lanciato un thread per la creazione di una parte di matrice delle distanze.\\
+\begin{listing}[H]
+	\inputminted[]{java}{Codici/CreateMatrixMessage.java}
+	\caption{Esempio invio messaggio da MainActor}
+	\label{Code:8}
+\end{listing}
 \textbf{ConcurrentDMActor.java}:
-Questa classe, istanziata in numero pari ai thread desiderati in input, riceve un messaggio da parte del \emph{MainActor} e richiama il metodo \textbf{concurrenceDistanceMatrix}.
-A lavoro ultimato invierà la sua parte di matrice delle distanze appena calcolata al MainActor.\\
+Questa classe, istanziata in numero pari ai thread desiderati in input, è la responsabile della creazione della matrice delle distanze. Essa riceve un messaggio da parte del \emph{MainActor} e richiama il metodo \textbf{concurrenceCreateMatrix}.
+A lavoro ultimato invierà la sua parte di matrice delle distanze appena calcolata al MainActor. Il MainActor, infine, ricompone tutte le parti ricevute dai diversi thread ed elimina eventuali pattern ripetuti. Al termine otterremo la matrice delle distanze completa che verrà utilizzata nelle fasi successive.
+\begin{listing}[H]
+	\inputminted[]{java}{Codici/ConcurrentDMActor.java}
+	\caption{Chiamata metodo concurrentCreateMatrix}
+	\label{Code:9}
+\end{listing}
 \textbf{ConcurrentOrderedDMActor.java}:
 Questa classe attende un messaggio da parte del \emph{MainActor} per dare il via alla fase di creazione degli \emph{OrderedDM} richiamando l'apposito metodo nella classe DistanceMatrix.\\
+\begin{listing}[H]
+	\inputminted[]{java}{Codici/ConcurrentOrderedDMActor.java}
+	\caption{Chiamata metodo createOrderedDM}
+	\label{Code:10}
+\end{listing}
 \textbf{ConcurrentFeasibilityActor.java}:
 Analogamente alle classi precedenti di attori, essa viene istanziata in numero pari ai thread desiderati.
 Queste istanze attendono un messaggio per dare il via alla fase di \emph{Feasibility} chiamando il metodo della classe \emph{FeasibilityOrderedDM}.\\
+\begin{listing}[H]
+	\inputminted[]{java}{Codici/ConcurrentFeasibilityActor.java}
+	\caption{Chiamata metodo feasibilityTest}
+	\label{Code:11}
+\end{listing}
 \textbf{ConcurrentLastStepsActor.java}:
-Questa classe attende un messaggio da parte del \emph{MainActor} per dare il via alle ultime due fasi di \emph{Minimality} e \emph{RFD Discovery}.
+Questa classe attende un messaggio da parte del \emph{MainActor} per dare il via alle ultime due fasi di \emph{Minimality} e \emph{RFD Generation}.
 Le due fasi hanno inizio chiamando il metodo apposito nella classe \emph{MinimalityAndGenerationRFD}.
+\begin{listing}[H]
+	\inputminted[]{java}{Codici/ConcurrentLastStepsActor.java}
+	\caption{Chiamata metodo startMinimalityAndGeneration}
+	\label{Code:12}
+\end{listing}
 \subsection{Package Utility}
 \begin{figure}[H]
 	\centering
