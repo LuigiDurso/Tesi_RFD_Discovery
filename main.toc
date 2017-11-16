@@ -22,3 +22,5 @@
 \contentsline {subsection}{\numberline {4.2.3}Package Actors}{27}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Package Utility}{28}{subsection.4.2.4}
 \contentsline {section}{\numberline {4.3}Requisiti}{29}{section.4.3}
+\contentsline {chapter}{\numberline {5}Conclusioni}{30}{chapter.5}
+\contentsline {chapter}{\numberline {6}Ringraziamenti}{31}{chapter.6}
