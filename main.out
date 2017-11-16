@@ -1,0 +1,18 @@
+\BOOKMARK [0][-]{chapter.1}{Introduzione}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Incipit}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Nozioni Preliminari}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Schema di relazione}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Dipendenze funzionali canoniche}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.3}{Dipendenze funzionali rilassate}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.4}{Scoperta delle RFD}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.5}{Dominanza}{section.1.2}% 8
+\BOOKMARK [1][-]{section.1.3}{Studi preliminari}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Stato dell'arte}{}% 10
+\BOOKMARK [0][-]{chapter.3}{Algoritmo}{}% 11
+\BOOKMARK [0][-]{chapter.4}{Implementazione}{}% 12
+\BOOKMARK [1][-]{section.4.1}{Tecnologie utilizzate}{chapter.4}% 13
+\BOOKMARK [2][-]{subsection.4.1.1}{AKKA}{section.4.1}% 14
+\BOOKMARK [2][-]{subsection.4.1.2}{FastUtil}{section.4.1}% 15
+\BOOKMARK [2][-]{subsection.4.1.3}{Joinery Dataframe}{section.4.1}% 16
+\BOOKMARK [1][-]{section.4.2}{Struttura del progetto}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.3}{Requisiti}{chapter.4}% 18
