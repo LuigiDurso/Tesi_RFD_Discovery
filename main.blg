@@ -7,36 +7,36 @@ Too many commas in name 1 of "Atzeni P., Ceri S., Fraternali P., Paraboschi S., 
 while executing---line 969 of file ieeetr.bst
 Too many commas in name 1 of "Atzeni P., Ceri S., Fraternali P., Paraboschi S., Torlone R." for entry libroCeri
 while executing---line 969 of file ieeetr.bst
-You've used 2 entries,
+You've used 3 entries,
             1876 wiz_defined-function locations,
-            489 strings with 3713 characters,
-and the built_in function-call counts, 299 in all, are:
-= -- 25
-> -- 8
+            492 strings with 3790 characters,
+and the built_in function-call counts, 413 in all, are:
+= -- 33
+> -- 12
 < -- 0
-+ -- 4
-- -- 2
-* -- 14
-:= -- 54
++ -- 6
+- -- 3
+* -- 17
+:= -- 69
 add.period$ -- 3
-call.type$ -- 2
-change.case$ -- 1
+call.type$ -- 3
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 18
-empty$ -- 38
-format.name$ -- 2
-if$ -- 70
+cite$ -- 3
+duplicate$ -- 22
+empty$ -- 56
+format.name$ -- 3
+if$ -- 99
 int.to.chr$ -- 0
-int.to.str$ -- 2
+int.to.str$ -- 3
 missing$ -- 3
-newline$ -- 10
-num.names$ -- 2
-pop$ -- 10
+newline$ -- 13
+num.names$ -- 3
+pop$ -- 15
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2
+skip$ -- 10
 stack$ -- 0
 substring$ -- 0
 swap$ -- 2
@@ -45,7 +45,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 2
-width$ -- 3
-write$ -- 19
+while$ -- 3
+width$ -- 4
+write$ -- 25
 (There were 2 error messages)

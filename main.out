@@ -8,22 +8,31 @@
 \BOOKMARK [2][-]{subsection.1.2.5}{Dominanza}{section.1.2}% 8
 \BOOKMARK [1][-]{section.1.3}{Studi preliminari}{chapter.1}% 9
 \BOOKMARK [0][-]{chapter.2}{Stato dell'arte}{}% 10
-\BOOKMARK [0][-]{chapter.3}{Algoritmo}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Matrice delle distanze}{chapter.3}% 12
-\BOOKMARK [2][-]{subsection.3.1.1}{Funzione di distanza}{section.3.1}% 13
-\BOOKMARK [2][-]{subsection.3.1.2}{Calcolo della matrice delle distanze}{section.3.1}% 14
-\BOOKMARK [1][-]{section.3.2}{Feasibility}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.3}{Minimality ed RFD Generation}{chapter.3}% 16
-\BOOKMARK [0][-]{chapter.4}{Implementazione}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Tecnologie utilizzate}{chapter.4}% 18
-\BOOKMARK [2][-]{subsection.4.1.1}{AKKA}{section.4.1}% 19
-\BOOKMARK [2][-]{subsection.4.1.2}{FastUtil}{section.4.1}% 20
-\BOOKMARK [2][-]{subsection.4.1.3}{Joinery Dataframe}{section.4.1}% 21
-\BOOKMARK [1][-]{section.4.2}{Struttura del progetto}{chapter.4}% 22
-\BOOKMARK [2][-]{subsection.4.2.1}{Package DataSet}{section.4.2}% 23
-\BOOKMARK [2][-]{subsection.4.2.2}{Package RFD}{section.4.2}% 24
-\BOOKMARK [2][-]{subsection.4.2.3}{Package Actors}{section.4.2}% 25
-\BOOKMARK [2][-]{subsection.4.2.4}{Package Utility}{section.4.2}% 26
-\BOOKMARK [1][-]{section.4.3}{Requisiti}{chapter.4}% 27
-\BOOKMARK [0][-]{chapter.5}{Conclusioni}{}% 28
-\BOOKMARK [0][-]{chapter.6}{Ringraziamenti}{}% 29
+\BOOKMARK [1][-]{section.2.1}{AFD Discovery}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{MD Discovery}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{DD Discovery}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Algoritmo}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Matrice delle distanze}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.1.1}{Funzione di distanza}{section.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.1.2}{Calcolo della matrice delle distanze}{section.3.1}% 17
+\BOOKMARK [1][-]{section.3.2}{Feasibility}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.3}{Minimality ed RFD Generation}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Implementazione}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Tecnologie utilizzate}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.1.1}{AKKA}{section.4.1}% 22
+\BOOKMARK [2][-]{subsection.4.1.2}{FastUtil}{section.4.1}% 23
+\BOOKMARK [2][-]{subsection.4.1.3}{Joinery Dataframe}{section.4.1}% 24
+\BOOKMARK [1][-]{section.4.2}{Struttura del progetto}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.2.1}{Package DataSet}{section.4.2}% 26
+\BOOKMARK [2][-]{subsection.4.2.2}{Package RFD}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.3}{Package Actors}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.4}{Package Utility}{section.4.2}% 29
+\BOOKMARK [1][-]{section.4.3}{Requisiti}{chapter.4}% 30
+\BOOKMARK [0][-]{chapter.5}{Conclusioni}{}% 31
+\BOOKMARK [1][-]{section.5.1}{Test}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.1.1}{Dataset utilizzati}{section.5.1}% 33
+\BOOKMARK [2][-]{subsection.5.1.2}{Test sequenziale}{section.5.1}% 34
+\BOOKMARK [2][-]{subsection.5.1.3}{Test con due thread}{section.5.1}% 35
+\BOOKMARK [2][-]{subsection.5.1.4}{Test con tre thread}{section.5.1}% 36
+\BOOKMARK [2][-]{subsection.5.1.5}{Test con sette thread}{section.5.1}% 37
+\BOOKMARK [0][-]{chapter.6}{Ringraziamenti}{}% 38
