@@ -61,3 +61,34 @@ Dopo aver calcolato la tabella $DT$, occorre ordinarla utilizzando come pivot la
 dove $d^{RHS}_i \leq d^{RHS}_j \leq \ldots \leq d^{RHS}_r$. \\
 A questo punto occorre dividere e raggruppare tutte le righe del data frame: le righe aventi lo stesso valore sulla colonna $DT[\cdot]['RHS']$ saranno raggruppate in sezioni di data frame disgiunte. 
 Questo data frame finale può finalmente essere utilizzato dalle successive fasi dell'algoritmo.
+\newpage
+Di seguito viene mostrato un esempio di creazione della matrice delle distanze:\\
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l l l l l l l l}
+		height & weight & shoe{\_}size & age \\
+		\hline
+		175 & 70 & 40 & 30\\
+		175 & 75 & 39 & 41\\
+		175 & 69 & 40 & 33\\
+		176 & 71 & 40 & 35\\
+		178 & 81 & 41 & 27\\
+		169 & 73 & 38 & 49\\
+		170 & 65 & 39 & 30\\
+	\end{tabular}
+	\caption{Dataset di esempio.}
+	\label{tab:Dataset_di_esempio}
+\end{table}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l l l l l l l l}
+		height & weight & shoe{\_}size & age & TuplePairID\\
+		\hline
+		0 & 5 & 1 & 11 & 0-1\\
+		0 & 6 & 1 & 8 & 1-2\\
+		\vdots & \vdots &  \vdots &  \vdots &  \vdots \\
+		1 & 8 & 1 & 19 & 5-6\\
+	\end{tabular}
+	\caption{Esempio matrice delle distanze}
+	\label{tab:Esempio_DM}
+\end{table}
