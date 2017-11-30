@@ -21,7 +21,7 @@
 \contentsline {paragraph}{Distanza tra date}{18}{equation.3.1.2}
 \contentsline {subsection}{\numberline {3.1.2}Calcolo della matrice delle distanze}{19}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Feasibility}{22}{section.3.2}
-\contentsline {section}{\numberline {3.3}Minimality ed RFD Generation}{24}{section.3.3}
+\contentsline {section}{\numberline {3.3}Minimality e Generation}{24}{section.3.3}
 \contentsline {chapter}{\numberline {4}Implementazione}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Tecnologie utilizzate}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}AKKA}{25}{subsection.4.1.1}
