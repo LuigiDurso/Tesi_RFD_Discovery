@@ -117,7 +117,7 @@ Gli argomenti da passare al metodo sono i seguenti:
 \end{itemize}
 \textbf{MinimalityAndGenerationRFD.java}:
 Questa classe contiene il metodo per l'inizio delle ultime due fasi finali.
-Durante l'esecuzione si cercano i minimi attraverso la fase di \emph{Minimality} e, successivamente, vengono trovate le \emph{RFD} durante la fase di \emph{RFD Generation}(Queste ultime due fasi non sono parte dello studio di questo lavoro di tesi).
+Durante l'esecuzione si cercano i minimi attraverso la fase di \emph{Minimality} e, successivamente, vengono trovate le \emph{RFD} durante la fase di \emph{Generation}(Queste ultime due fasi non sono parte dello studio di questo lavoro di tesi).
 Il Metodo che si occupa di dare inizio a questi ultimi due step è \textbf{startMinimalityAndGeneration}.
 \begin{listing}[H]
 	\JavaCode{Codici/MinimalityAndGenerationRFD.java}
@@ -192,7 +192,7 @@ Queste istanze attendono un messaggio per dare il via alla fase di \emph{Feasibi
 	\label{Code:11}
 \end{listing}
 \textbf{ConcurrentLastStepsActor.java}:
-Questa classe attende un messaggio da parte del \emph{MainActor} per dare il via alle ultime due fasi di \emph{Minimality} e \emph{RFD Generation}.
+Questa classe attende un messaggio da parte del \emph{MainActor} per dare il via alle ultime due fasi di \emph{Minimality} e \emph{Generation}.
 Le due fasi hanno inizio chiamando il metodo apposito nella classe \emph{MinimalityAndGenerationRFD}.
 \begin{listing}[H]
 	\JavaCode{Codici/ConcurrentLastStepsActor.java}
