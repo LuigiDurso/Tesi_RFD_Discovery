@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.3)  5 DEC 2017 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.3)  8 DEC 2017 14:38
 entering extended mode
 **./main.tex
 (main.tex
@@ -1373,20 +1373,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--81
  []
 
 ) (Capitoli/Algoritmo/Sezioni/Feasibility.tex [21]
-<Immagini/Feasibility.png, id=438, 365.11406pt x 674.52pt>
-File: Immagini/Feasibility.png Graphic file (type png)
-<use Immagini/Feasibility.png>
-Package pdftex.def Info: Immagini/Feasibility.png  used on input line 7. on inp
-ut line 7.
-Package pdftex.def Info: Requested size: 219.07011pt x 404.71512pt on input lin
-e 7.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-[22 <./Immagini/Feasibility.png>] [23])
-(Capitoli/Algoritmo/Sezioni/LastStep.tex)) [24]
+[22] [23]) (Capitoli/Algoritmo/Sezioni/LastStep.tex)) [24]
 Capitolo 4.
 (Capitoli/Implementazione/Implementazione.tex
 (Capitoli/Implementazione/Sezioni/TecnologieUtilizzate.tex
@@ -1398,7 +1392,7 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 
 ])
 (Capitoli/Implementazione/Sezioni/StrutturaDelProgetto.tex [26]
-<Immagini/StrutturaProgetto.png, id=468, 238.8925pt x 259.97125pt>
+<Immagini/StrutturaProgetto.png, id=466, 238.8925pt x 259.97125pt>
 File: Immagini/StrutturaProgetto.png Graphic file (type png)
 <use Immagini/StrutturaProgetto.png>
 Package pdftex.def Info: Immagini/StrutturaProgetto.png  used on input line 8. 
@@ -1406,7 +1400,7 @@ on input line 8.
 Package pdftex.def Info: Requested size: 238.8919pt x 259.97061pt on input line
  8.
  [27] [28 <./Immagini/StrutturaProgetto.png>]
-<Immagini/PackageRFD.png, id=480, 217.81375pt x 104.39pt>
+<Immagini/PackageRFD.png, id=478, 217.81375pt x 104.39pt>
 File: Immagini/PackageRFD.png Graphic file (type png)
 <use Immagini/PackageRFD.png>
 Package pdftex.def Info: Immagini/PackageRFD.png  used on input line 36. on inp
@@ -1443,7 +1437,7 @@ pygtex) [33]
 pygtex) [34]
 (_minted-main/9AEC94BAB0BE4E136EC65C02D3D0FC522245ECF7BF73D5CFC3EF3002A429A723.
 pygtex) [35]
-<Immagini/PackageActors.png, id=514, 226.34563pt x 103.38625pt>
+<Immagini/PackageActors.png, id=512, 226.34563pt x 103.38625pt>
 File: Immagini/PackageActors.png Graphic file (type png)
 <use Immagini/PackageActors.png>
 Package pdftex.def Info: Immagini/PackageActors.png  used on input line 153. on
@@ -1476,7 +1470,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--193
 
 (_minted-main/C4EDC69EC69304D1DDB67B492175DA41B6052DA82450BE49AD331C7AB44C0952.
 pygtex) [38]
-<Immagini/PackageUtility.png, id=529, 208.78pt x 169.13188pt>
+<Immagini/PackageUtility.png, id=527, 208.78pt x 169.13188pt>
 File: Immagini/PackageUtility.png Graphic file (type png)
 <use Immagini/PackageUtility.png>
 Package pdftex.def Info: Immagini/PackageUtility.png  used on input line 205. o
@@ -1514,7 +1508,7 @@ Overfull \hbox (18.22665pt too wide) in paragraph at lines 84--94
  [][] 
  []
 
-<Immagini/GraficoEchocardiogram.png, id=555, 681.54625pt x 596.2275pt>
+<Immagini/GraficoEchocardiogram.png, id=553, 681.54625pt x 596.2275pt>
 File: Immagini/GraficoEchocardiogram.png Graphic file (type png)
 <use Immagini/GraficoEchocardiogram.png>
 Package pdftex.def Info: Immagini/GraficoEchocardiogram.png  used on input line
@@ -1540,10 +1534,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 471605860024670CFFC65EF91A32B6DD;2738.
  ) 
 Here is how much of TeX's memory you used:
- 15412 strings out of 493312
- 244469 string characters out of 3144947
- 512372 words of memory out of 3000000
- 18370 multiletter control sequences out of 15000+200000
+ 15446 strings out of 493312
+ 244913 string characters out of 3144947
+ 512351 words of memory out of 3000000
+ 18404 multiletter control sequences out of 15000+200000
  24869 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,16n,53p,1441b,616s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1577,9 +1571,9 @@ ype1/public/amsfonts/cm/cmr6.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmr8.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/MiKTeX 2.9/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on main.pdf (60 pages, 787946 bytes).
+Output written on main.pdf (60 pages, 721524 bytes).
 PDF statistics:
- 1270 PDF objects out of 1440 (max. 8388607)
+ 1283 PDF objects out of 1440 (max. 8388607)
  148 named destinations out of 1000 (max. 500000)
- 364 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 

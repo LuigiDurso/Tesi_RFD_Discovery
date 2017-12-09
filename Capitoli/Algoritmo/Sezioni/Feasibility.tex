@@ -1,13 +1,49 @@
 \newpage
 \section{Feasibility}
-Una volta creato il dataframe contenente la matrice delle distanze, siamo pronti per l'avvio del \emph{Feasibility test}. Questa fase prende in input la precedentemente citata matrice con un determinato campo che sarà il nostro \emph{RHS}. Ovviamente, i restanti campi, formeranno il nostro \emph{LHS}.
-Nel seguente pseudocodice diamo una occhiata su quello che dovrebbe effettuare il nostro algoritmo durante la fase corrente:\\
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale = 0.6]{Immagini/Feasibility.png}
-	\caption{Pseudocodice Feasibility Test}
-	\label{fig:Pseudocodice Feasibility Test}
-\end{figure}
+Una volta creato il dataframe contenente la matrice delle distanze, siamo pronti per l'avvio del \emph{Feasibility test}. Questa fase prende in input la precedentemente citata matrice con un determinato campo che sarà il nostro \emph{RHS}.\\ 
+Prima di espletare il da farsi, diamo una prima occhiata allo pseudocodice:
+\begin{algorithm}[H]
+	\caption{Feasibility Test}
+	\label{FeasibilityTestAlgoritmo}
+	\textbf{Input: }Matrice delle distanze \textbf{D} ordinata di taglia n
+	\newline
+	\textbf{Output: }Insieme C\\
+	\begin{algorithmic}[1]
+		\State \textbf{clusterID} $\gets$ \emph{getClusterID(n)}+1;
+		\State \textbf{actualC} $\gets$ $0$;
+		\State \textbf{dominates} $\gets$ false;
+		\For{\textbf{each} $t_p \in D$ \emph{in ordine decrescente}}
+			\If{\emph{getClusterID($t_p$)} != \textbf{clusterID}}
+			\State \textbf{clusterID} $\gets$ \emph{getClusterID($t_p$)};
+				\If{\textbf{actualC} != 0}
+				\State addSet(\textbf{C},\textbf{actualC})   \Comment{ inserimento \textbf{actualC} in \textbf{C} } 
+				\EndIf
+			\EndIf
+			\If{\emph{getClusterID($t_p$)} == 0}
+			\State break;  \Comment{ processo stoppato quando si raggiunge il cluster 0} 
+			\EndIf
+			\If{\textbf{actualC} == 0}
+				\State addTuple (\textbf{actualC}, \emph{$t_p$});  \Comment{ Per il primo pattern} 
+			\Else
+				\State \textbf{dominates} $\gets$ false;
+				\For{\textbf{each} $t'_p \in $ \textbf{actualC}}
+					\If{!dominance ($t_p,t'_p$)}
+						\If{dominance ($t'_p,t_p$)}
+							\State remove (\textbf{actualC},$t'_p$);  \Comment{ $t'_p$ non è pattern minimale} 
+						\EndIf
+					\Else
+						\State \textbf{dominates} $\gets$ true;
+						\State break;
+					\EndIf
+				\EndFor
+				\If{!dominates}
+				addTuple(\textbf{actualC}, $t_p$);
+				\EndIf
+			\EndIf
+		\EndFor\\
+		\Return{C;}
+		\end{algorithmic}
+	\end{algorithm}
 Come detto nella fase di creazione della matrice delle distanze, tale matrice è stata ordinata per il valore dell'\emph{RHS} e successivamente sono stati raggruppati i pattern con valori uguali di tale campo(\emph{Cluster})\footnote{Per questo algoritmo ci riferiremo a ClusterN come il gruppo di pattern aventi N come valore di RHS }.
 Lo scopo di questa fase è l'ottenimento di insiemi contenenti pattern che superino il test di Feasibility, tali insiemi saranno costruiti uno per ogni valore differente di RHS.
 Come si evince dallo pseudocodice l'analisi ha inizio con il clusterN con N di valore massimo.
